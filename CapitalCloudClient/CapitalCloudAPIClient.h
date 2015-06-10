@@ -7,7 +7,7 @@
 //
 /*!
  @header CapitalCloudAPIClient api交互
- @abstract APP和石山sdk的交互主要通过CapitalCloudAPIClient类,首先需要生成CapitalCloudAPIClient对象.
+ @abstract APP和首云sdk的交互主要通过CapitalCloudAPIClient类,首先需要生成CapitalCloudAPIClient对象.
  @author capitalCloud
  @version 1.3.2
  */
@@ -23,7 +23,7 @@
 
 /*!
  @class
- @abstract APP和石山sdk的交互主要通过CapitalCloudAPIClient类,首先需要生成CapitalCloudAPIClient对象.
+ @abstract APP和首云sdk的交互主要通过CapitalCloudAPIClient类,首先需要生成CapitalCloudAPIClient对象.
  */
 
 @interface CapitalCloudAPIClient : NSObject
@@ -38,7 +38,7 @@
 
 /*!
  @property
- @abstract api交互地址，默认为：http://api.alpha.capitalCloud.cn
+ @abstract api交互地址，默认为：http://api.video.capitalcloud.net
  */
 @property(readwrite, strong) NSString *apiUrl;
 
@@ -73,7 +73,7 @@
  @method
  @abstract 接口调用；
  @discussion 接口调用；
- @param methodUrl 基本路径如：http://api.alpha.capitalCloud.cn/
+ @param methodUrl 基本路径如：http://api.video.capitalcloud.net/
  @param parameters 参数；
  @param error 错误信息；
  @param get get 或者是 post；
@@ -84,7 +84,7 @@
 /*!
  @method
  @abstract api接口调用；
- @discussion api接口调用(http://api.alpha.capitalCloud.cn/)；
+ @discussion api接口调用(http://api.video.capitalcloud.net/)；
  @param methodName 调用api名称，如:players_getConfigurations；
  @param parameters 参数；
  @param error 错误信息；
